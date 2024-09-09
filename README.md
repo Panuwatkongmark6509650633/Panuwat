@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/096830f7-6130-48d1-b416-b0cb06c6fee0)
 # Strapi คืออะไร
 Strapi คือระบบ Content Management System (CMS) แบบ Headless ที่ถูกพัฒนาโดยใช้ JavaScript และ Node.js ซึ่งมีความยืดหยุ่นสูง ผู้ใช้สามารถสร้างและจัดการเนื้อหาต่างๆ ผ่าน API ได้อย่างง่ายดายโดยไม่ต้องผูกพันกับรูปแบบการแสดงผลเฉพาะแพลตฟอร์มใดๆ
 # สารบัญ
