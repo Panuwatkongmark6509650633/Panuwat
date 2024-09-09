@@ -20,13 +20,18 @@ CMS หรือ **Content Management System** คือระบบที่ช
 	-   ตัวอย่างการใช้งาน: คุณอาจมี Collection Type สำหรับโพสต์ในบล็อกซึ่งแต่ละโพสต์จะมีข้อมูลเช่น ชื่อเรื่อง, เนื้อหา, และวันที่โพสต์
  2. Single Type เป็นประเภทของเนื้อหาที่มีเพียงรายการเดียวเท่านั้น เช่น หน้าแรก (Homepage), การตั้งค่าระบบ (Site Settings), หรือข้อมูลเกี่ยวกับเรา (About Us) ซึ่งเหมาะสำหรับข้อมูลที่ไม่ต้องมีหลายรายการและมีเพียงชุดข้อมูลเดียวที่ใช้ทั่วทั้งเว็บไซต์
 	-   ตัวอย่างการใช้งาน: คุณอาจมี Single Type สำหรับหน้าแรกของเว็บไซต์ซึ่งมีข้อมูลเช่น หัวข้อหลัก, ข้อความต้อนรับ, และภาพใหญ่
+
+
 	![Content-type Builder interface](https://docs.strapi.io/img/assets/content-type-builder/content-types-builder.png) 
 Reference: [https://docs.strapi.io/user-docs/content-type-builder](https://docs.strapi.io/user-docs/content-type-builder)
+
+
 โดยมีประเภทข้อมูลดังรูป
 ![Fields selection](https://docs.strapi.io/img/assets/content-type-builder/fields-selection.png)
 Reference: https://docs.strapi.io/user-docs/content-type-builder/configuring-fields-content-type
 
-Content Manager เป็นเครื่องมือที่สำคัญสำหรับการจัดการเนื้อหาใน Strapi ซึ่งช่วยให้ผู้ใช้สามารถจัดการข้อมูลได้อย่างมีประสิทธิภาพและเป็นระเบียบ 
+
+**Content Manager** เป็นเครื่องมือที่สำคัญสำหรับการจัดการเนื้อหาใน Strapi ซึ่งช่วยให้ผู้ใช้สามารถจัดการข้อมูลได้อย่างมีประสิทธิภาพและเป็นระเบียบ 
 #### ประเภทของ Content Types
 
 1.  **Collection Type**:
