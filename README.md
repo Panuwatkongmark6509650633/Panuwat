@@ -37,33 +37,18 @@ CMS หรือ **Content Management System** คือระบบที่ช
 ขั้นตอน
 
  1. สร้าง folder ที่ต้องการเก็บ Strapi
- 2. `win+r` แล้วพิมพ์ `cmd` เพื่อเปิด terminal
- 3. cd เข้าไปใน folder ที่สร้างไว้
- 4. ทำการ Download Strapi ตามคำสั่งดังนี้
+ 2. กด `Win + R` บนแป้นพิมพ์ แล้วพิมพ์ `cmd` จากนั้นกด Enter เพื่อเปิด Command Prompt
+ 3. นำทางไปยังโฟลเดอร์ที่สร้างไว้โดย `cd` เข้าไปใน folder ที่สร้างไว้
+ 4. ทำการ Download และติดตั้ง Strapi ตามคำสั่งดังนี้ 
 ```
 npx create-strapi-app@latest my-project --quickstart
 #เมื่อรันจะขึ้นข้อความให้เลือก Login/Sign up หรือ Skip แนะนำให้เลือก Login
 ```
-`npm run develop`
 
-```
-![image](https://github.com/user-attachments/assets/6b23a5bd-3851-4446-b240-c0d8d72839cb
-
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+5. `cd` เข้าไปใน `my-project` จากนั้นทำการตรวจสอบ version ด้วยคำสั่ง`npm -v`
+6. เริ่มต้นใช้งาน Strapi ด้วยคำสั่ง `npm run develop`
 
 
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
 
 ## Deployment
 
