@@ -253,8 +253,12 @@ npm run develop
 http://100.27.224.138:1337/
 ```
 เมื่อทำตามขั้นตอนทั้งหมดที่กล่าวมาจะสามารถเข้าถึงและใช้งาน Strapi ผ่าน Server ได้อย่างสมบูรณ์
+
 Reference: https://docs.strapi.io/dev-docs/installation/cli
+
 https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+
 https://docs.strapi.io/dev-docs/deployment
+
 
 
