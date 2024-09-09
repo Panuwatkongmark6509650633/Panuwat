@@ -11,6 +11,8 @@ npm run develop
 # or
 yarn develop
 ```
+![image](https://github.com/user-attachments/assets/6b23a5bd-3851-4446-b240-c0d8d72839cb)
+
 
 ### `start`
 
