@@ -3,7 +3,7 @@
 Strapi คือระบบ Content Management System (CMS) แบบ Headless ที่ถูกพัฒนาโดยใช้ JavaScript และ Node.js ซึ่งมีความยืดหยุ่นสูง ผู้ใช้สามารถสร้างและจัดการเนื้อหาต่างๆ ผ่าน API ได้อย่างง่ายดายโดยไม่ต้องผูกพันกับรูปแบบการแสดงผลเฉพาะแพลตฟอร์มใดๆ
 # สารบัญ
  - [รายละเอียดของ Strapi](#%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B8%A2%E0%B8%94%E0%B8%82%E0%B8%AD%E0%B8%87%20Strapi)
- -  ขั้นตอนการติดตั้ง
+ - ขั้นตอนการติดตั้ง
  - กรณีการใช้งาน
  - เกี่ยวกับ .gitignore
  - Deployment
@@ -49,6 +49,8 @@ npx create-strapi-app@latest my-project --quickstart
 6. เริ่มต้นใช้งาน Strapi ด้วยคำสั่ง `npm run develop` จะเด้งเข้าสู่หน้าสมัคร admin `localhost:1337/admin/registe` อัตโนมัติ
 
 ![image](https://github.com/user-attachments/assets/f301945f-3591-435b-9297-f60fae73a832)
+
+7. สามารถทำการ Register เพื่อเข้าใช้งานได้
 
 
 
