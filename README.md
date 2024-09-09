@@ -130,6 +130,7 @@ npx create-strapi-app@latest my-project --quickstart
 -   **ความแตกต่างในสภาพแวดล้อม**: ไฟล์ `.env` มักจะมีการตั้งค่าที่แตกต่างกันไปตามสภาพแวดล้อม (เช่น การพัฒนา, การทดสอบ, หรือการใช้งานจริง) ดังนั้นแต่ละนักพัฒนาหรือเซิร์ฟเวอร์อาจมีไฟล์ `.env` ของตัวเองที่ไม่ควรถูกแชร์
 
 ดังนั้น การเพิ่ม `node_modules` และ `.env` ลงใน `.gitignore` จะช่วยให้ repository ของคุณมีขนาดเล็กลง, ปลอดภัยมากขึ้น และจัดการได้ง่ายขึ้นในการทำงานร่วมกันในทีม
+
 Reference: https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 ## Deployment
