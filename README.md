@@ -1,15 +1,14 @@
 
 # Strapi คืออะไร
-## Strapi คืออะไร
-### Strapi คืออะไร
-### `Strapi คืออะไร`
-
 Strapi คือระบบ Content Management System (CMS) แบบ Headless ที่ถูกพัฒนาโดยใช้ JavaScript และ Node.js ซึ่งมีความยืดหยุ่นสูง ผู้ใช้สามารถสร้างและจัดการเนื้อหาต่างๆ ผ่าน API ได้อย่างง่ายดายโดยไม่ต้องผูกพันกับรูปแบบการแสดงผลเฉพาะแพลตฟอร์มใดๆ
-### `develop`
-#สารบัญ
-  
+# สารบัญ
+ - [รายละเอียดของ Strapi](#%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%A5%E0%B8%B0%E0%B9%80%E0%B8%AD%E0%B8%B5%E0%B8%A2%E0%B8%94%E0%B8%82%E0%B8%AD%E0%B8%87%20Strapi)
+ -  ขั้นตอนการติดตั้ง
+ - กรณีการใช้งาน
+ - เกี่ยวกับ .gitignore
+ - Deployment
+## รายละเอียดของ Strapi
 
- - [Deployment](#Deployment)
 
 
 
@@ -22,8 +21,7 @@ npm run develop
 # or
 yarn develop
 ```
-![image](https://github.com/user-attachments/assets/6b23a5bd-3851-4446-b240-c0d8d72839cb)
-
+![image](https://github.com/user-attachments/assets/6b23a5bd-3851-4446-b240-c0d8d72839cb
 
 ### `start`
 
