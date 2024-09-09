@@ -42,7 +42,7 @@ Reference: https://docs.strapi.io/user-docs/content-type-builder/configuring-fie
     -   ตัวอย่าง: **User** (Collection Type) ที่มีหลายตัวอย่างของผู้ใช้ โดยแต่ละตัวอย่างมีข้อมูลเช่น ชื่อผู้ใช้, อีเมล, รหัสผ่าน, และบทบาท
     -   ข้อมูลตัวอย่าง:
         -   **Username**: Jennifer
-        -   **Email**: Jennifer@dome.tu.ac.th.com
+        -   **Email**: Jennifer@dome.tu.ac.th
         -   **Password**: Jlaw123
         -   **Role**: Student
 2.  **Single Type**:
