@@ -47,6 +47,8 @@ npx create-strapi-app@latest my-project --quickstart
 
 5. `cd` เข้าไปใน `my-project` จากนั้นทำการตรวจสอบ version ด้วยคำสั่ง`npm -v`
 6. เริ่มต้นใช้งาน Strapi ด้วยคำสั่ง `npm run develop`
+![image](https://github.com/user-attachments/assets/f301945f-3591-435b-9297-f60fae73a832)
+
 
 
 
