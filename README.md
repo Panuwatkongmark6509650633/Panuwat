@@ -1,4 +1,5 @@
 
+
 # Strapi คืออะไร
 Strapi คือระบบ Content Management System (CMS) แบบ Headless ที่ถูกพัฒนาโดยใช้ JavaScript และ Node.js ซึ่งมีความยืดหยุ่นสูง ผู้ใช้สามารถสร้างและจัดการเนื้อหาต่างๆ ผ่าน API ได้อย่างง่ายดายโดยไม่ต้องผูกพันกับรูปแบบการแสดงผลเฉพาะแพลตฟอร์มใดๆ
 # สารบัญ
@@ -12,6 +13,59 @@ CMS หรือ **Content Management System** คือระบบที่ช
 
 **Strapi** เป็นหนึ่งใน CMS ที่ได้รับความนิยม โดย Strapi เป็น CMS แบบ Headless ซึ่งหมายความว่า มันแยกส่วนของการจัดการเนื้อหาออกจากส่วนของการแสดงผล ทำให้สามารถเชื่อมต่อกับ Frontend หรือแอปพลิเคชันใด ๆ ผ่าน API เช่น REST หรือ GraphQL ได้อย่างยืดหยุ่น นอกจากนี้ Strapi ยังเป็น Open Source ซึ่งหมายความว่าผู้ใช้สามารถปรับแต่งและขยายการทำงานได้ตามความต้องการ
 
+### องค์ประกอบของ Strapi
+องค์ประกอบของ Strapi สามารถเเบ่งย่อยออกเป็น 2 ส่วนได้เเก่ `Content Manager` และ `Content Type-builder` โดย Content Type-builder เป็นตั้วสร้างและจัดการ Content Type ซึ่งสามารถแบ่งออกเป็น 2 ประเภทได้เเก่ 
+
+ 1. Collection Type  เป็นประเภทของเนื้อหาที่สามารถมีหลายรายการได้ เช่น บทความ (Articles), ผลิตภัณฑ์ (Products), หรือโพสต์ในบล็อก (Blog Posts) ซึ่งเหมาะสำหรับข้อมูลที่มีหลายรายการหรือรายการที่มีลักษณะเหมือนกัน
+	-   ตัวอย่างการใช้งาน: คุณอาจมี Collection Type สำหรับโพสต์ในบล็อกซึ่งแต่ละโพสต์จะมีข้อมูลเช่น ชื่อเรื่อง, เนื้อหา, และวันที่โพสต์
+ 2. Single Type เป็นประเภทของเนื้อหาที่มีเพียงรายการเดียวเท่านั้น เช่น หน้าแรก (Homepage), การตั้งค่าระบบ (Site Settings), หรือข้อมูลเกี่ยวกับเรา (About Us) ซึ่งเหมาะสำหรับข้อมูลที่ไม่ต้องมีหลายรายการและมีเพียงชุดข้อมูลเดียวที่ใช้ทั่วทั้งเว็บไซต์
+	-   ตัวอย่างการใช้งาน: คุณอาจมี Single Type สำหรับหน้าแรกของเว็บไซต์ซึ่งมีข้อมูลเช่น หัวข้อหลัก, ข้อความต้อนรับ, และภาพใหญ่
+	![Content-type Builder interface](https://docs.strapi.io/img/assets/content-type-builder/content-types-builder.png) 
+Reference: [https://docs.strapi.io/user-docs/content-type-builder](https://docs.strapi.io/user-docs/content-type-builder)
+โดยมีประเภทข้อมูลดังรูป
+![Fields selection](https://docs.strapi.io/img/assets/content-type-builder/fields-selection.png)
+Reference: https://docs.strapi.io/user-docs/content-type-builder/configuring-fields-content-type
+
+Content Manager เป็นเครื่องมือที่สำคัญสำหรับการจัดการเนื้อหาใน Strapi ซึ่งช่วยให้ผู้ใช้สามารถจัดการข้อมูลได้อย่างมีประสิทธิภาพและเป็นระเบียบ 
+#### ประเภทของ Content Types
+
+1.  **Collection Type**:
+    
+    -   **Collection Type** คือประเภทของข้อมูลที่สามารถมีหลายรายการ เช่น ฐานข้อมูลที่มีหลายระเบียนที่มีโครงสร้างเดียวกัน
+    -   ตัวอย่าง: **User** (Collection Type) ที่มีหลายตัวอย่างของผู้ใช้ โดยแต่ละตัวอย่างมีข้อมูลเช่น ชื่อผู้ใช้, อีเมล, รหัสผ่าน, และบทบาท
+    -   ข้อมูลตัวอย่าง:
+        -   **Username**: Jennifer
+        -   **Email**: Jennifer@dome.tu.ac.th.com
+        -   **Password**: Jlaw123
+        -   **Role**: Student
+2.  **Single Type**:
+    
+    -   **Single Type** คือประเภทของข้อมูลที่มีเพียงหนึ่งรายการเดียวเท่านั้น โดยใช้สำหรับข้อมูลที่ไม่ต้องการหลายรายการ
+    -   ตัวอย่าง: **Contact** (Single Type) ที่มีข้อมูลเพียงชุดเดียวสำหรับข้อมูลติดต่อ เช่น FacebookID, โทรศัพท์, และที่อยู่
+    -   ข้อมูลตัวอย่าง:
+        -   **LineID**: Jennifer Lawrence
+        -   **Phone**: +66 986704012
+        -   **Address**: 168/980 etc.
+
+#### ฟังก์ชันการทำงานของ Content Manager
+
+-   **การจัดการ Collection Types**:
+    
+    -   สามารถดู, สร้าง, แก้ไข, และลบรายการที่อยู่ใน Collection Type
+    -   แสดงรายการทั้งหมดในมุมมอง List View และอนุญาตให้ทำการค้นหาและกรองข้อมูล
+-   **การจัดการ Single Types**:
+    
+    -   แสดงข้อมูลทั้งหมดของ Single Type ในมุมมอง Edit View เนื่องจากมีเพียงรายการเดียว
+-   **การค้นหาและการกรอง**:
+    
+    -   ใช้เครื่องมือค้นหาและกรองเพื่อค้นหาหรือกรองรายการที่ต้องการภายใน Collection Type
+-   **การเพิ่มและแก้ไขข้อมูล**:
+    
+    -   เพิ่มข้อมูลใหม่หรือแก้ไขข้อมูลที่มีอยู่ใน Content Manager
+
+Content Manager จึงเป็นเครื่องมือสำคัญที่ช่วยให้การจัดการเนื้อหาภายใน Strapi เป็นไปอย่างมีประสิทธิภาพและเป็นระเบียบตามที่กำหนดไว้ใน Content-Type Builder.
+
+นอกจากนี้ยังมีฟีเจอร์อื่นๆเช่น  `Media Library`, `Documentation`, `Plugins`, `Marketplace` เป็นต้น
 ## ขั้นตอนการติดตั้ง
 ความต้องการขั้นต่ำของระบบ
 
@@ -19,7 +73,6 @@ CMS หรือ **Content Management System** คือระบบที่ช
  - **npm**  < v.6
 
 ขั้นตอน
-
  1. สร้าง folder ที่ต้องการเก็บ Strapi
  2. กด `Win + R` บนแป้นพิมพ์ แล้วพิมพ์ `cmd` จากนั้นกด Enter เพื่อเปิด Command Prompt
  3. นำทางไปยังโฟลเดอร์ที่สร้างไว้โดย `cd` เข้าไปใน folder ที่สร้างไว้
